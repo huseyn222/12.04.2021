@@ -1,0 +1,54 @@
+﻿@model IEnumerable<final01._03._2021.Models.musteri4>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/admin1/Views/Shared/adminPage1.cshtml";
+}
+
+<h2>Index</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fotourl)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.adsoyad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.unvan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nomre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.haqqinda)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            
+            <img style="max-width: 500px;" src="@Html.DisplayFor(modelItem => item.fotourl)">
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.adsoyad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.unvan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.haqqinda)
+        </td>
+        <td>
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

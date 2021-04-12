@@ -1,0 +1,59 @@
+﻿@model final01._03._2021.Models.musteri4
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>musteri4</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fotourl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fotourl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adsoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adsoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.unvan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.unvan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haqqinda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haqqinda)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

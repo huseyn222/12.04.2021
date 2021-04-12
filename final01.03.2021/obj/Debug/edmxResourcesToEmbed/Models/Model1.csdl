@@ -31,6 +31,10 @@
     <EntitySet Name="adminlogins" EntityType="Model.adminlogin" />
     <EntitySet Name="haqqindas" EntityType="Model.haqqinda" />
     <EntitySet Name="sati1" EntityType="Model.sati1" />
+    <EntitySet Name="registers" EntityType="Model.register" />
+    <EntitySet Name="logins" EntityType="Model.login" />
+    <EntitySet Name="musteri4" EntityType="Model.musteri4" />
+    <EntitySet Name="teklifs" EntityType="Model.teklif" />
   </EntityContainer>
   <EntityType Name="adminlogin">
     <Key>
@@ -57,5 +61,43 @@
     <Property Name="soz1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="qiymet" Type="Int32" Nullable="false" />
     <Property Name="haqqinda8" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Marka" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="register">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="parol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="parol1" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="parol" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="musteri4">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fotourl" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="adsoyad" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="unvan" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="nomre" Type="Int32" Nullable="false" />
+    <Property Name="haqqinda" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="teklif">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="adiniz" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mesajiniz" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

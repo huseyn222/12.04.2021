@@ -23,6 +23,25 @@
     <Property Name="fotourl" Type="nvarchar" MaxLength="500" Nullable="false" />
     <Property Name="sozz" Type="nvarchar" MaxLength="500" Nullable="false" />
   </EntityType>
+  <EntityType Name="login">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="parol" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="musteri4">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fotourl" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="adsoyad" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="unvan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="nomre" Type="int" Nullable="false" />
+    <Property Name="haqqinda" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="orta">
     <Key>
       <PropertyRef Name="ID" />
@@ -30,6 +49,15 @@
     <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="photourl" Type="nvarchar" MaxLength="500" Nullable="false" />
     <Property Name="sozler" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="register">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="parol" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="parol1" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
   <EntityType Name="sati1">
     <Key>
@@ -40,6 +68,7 @@
     <Property Name="soz1" Type="nvarchar" MaxLength="500" />
     <Property Name="qiymet" Type="int" Nullable="false" />
     <Property Name="haqqinda8" Type="nvarchar" MaxLength="500" />
+    <Property Name="Marka" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="slide1">
     <Key>
@@ -50,12 +79,25 @@
     <Property Name="soz1" Type="nvarchar" MaxLength="500" />
     <Property Name="soz2" Type="nvarchar" MaxLength="500" />
   </EntityType>
+  <EntityType Name="teklif">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="adiniz" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="mesajiniz" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="ModelStoreContainer">
     <EntitySet Name="adminlogin" EntityType="Self.adminlogin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="brendler" EntityType="Self.brendler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="haqqinda" EntityType="Self.haqqinda" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="login" EntityType="Self.login" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="musteri4" EntityType="Self.musteri4" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="orta" EntityType="Self.orta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="register" EntityType="Self.register" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sati1" EntityType="Self.sati1" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="slide1" EntityType="Self.slide1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="teklif" EntityType="Self.teklif" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

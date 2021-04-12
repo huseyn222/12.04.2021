@@ -19,5 +19,6 @@ namespace final01._03._2021.Models
         public string soz1 { get; set; }
         public int qiymet { get; set; }
         public string haqqinda8 { get; set; }
+        public string Marka { get; set; }
     }
 }

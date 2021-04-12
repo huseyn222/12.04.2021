@@ -1,0 +1,65 @@
+﻿@model final01._03._2021.Models.musteri4
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/admin1/Views/Shared/adminPage1.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>musteri4</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fotourl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fotourl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.adsoyad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.adsoyad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.unvan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.unvan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nomre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haqqinda)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haqqinda)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

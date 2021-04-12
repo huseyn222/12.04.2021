@@ -132,13 +132,20 @@
     <Compile Include="Areas\admin1\Controllers\adminController.cs" />
     <Compile Include="Areas\admin1\Controllers\haqqindaController.cs" />
     <Compile Include="Areas\admin1\Controllers\homeController.cs" />
+    <Compile Include="Areas\admin1\Controllers\musteri4Controller.cs" />
     <Compile Include="Areas\admin1\Controllers\okController.cs" />
-    <Compile Include="Areas\admin1\Controllers\satisController.cs" />
+    <Compile Include="Areas\admin1\Controllers\registerController.cs" />
+    <Compile Include="Areas\admin1\Controllers\satis1Controller.cs" />
     <Compile Include="Areas\admin1\Controllers\sliderController.cs" />
     <Compile Include="Controllers\blogController.cs" />
     <Compile Include="Controllers\cartController.cs" />
+    <Compile Include="Controllers\detailController.cs" />
     <Compile Include="Controllers\haqqindaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\index2Controller.cs" />
+    <Compile Include="Controllers\loginController.cs" />
+    <Compile Include="Controllers\musteri44Controller.cs" />
+    <Compile Include="Controllers\registerController.cs" />
     <Compile Include="Controllers\shopController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -150,6 +157,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\haqqinda.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\login.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Model1.Context.cs">
@@ -167,13 +177,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\musteri4.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\orta.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\register.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sati1.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\slide1.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\teklif.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -1084,6 +1103,7 @@
     <Content Include="newfinal\foto\141765995_1100638117043986_5408927577504960781_n.jpg" />
     <Content Include="newfinal\foto\600x314-insan-kaynagina-yatirim-1582664596880.jpeg" />
     <Content Include="newfinal\foto\accessories-5_f85ee6be-135b-445f-b539-c7f4482e7c7f_900x.jpg" />
+    <Content Include="newfinal\foto\AdobeStock_93091477-e1560547968396.jpeg" />
     <Content Include="newfinal\foto\Aug_Art-Flashsale-PC._CB441247013_.gif" />
     <Content Include="newfinal\foto\blog-man-fashion1-600x670.jpg" />
     <Content Include="newfinal\foto\blog-new-17-1024x629_1024x.progressive.jpg" />
@@ -1103,6 +1123,7 @@
     <Content Include="newfinal\foto\shoe_870x.progressive.jpg" />
     <Content Include="newfinal\foto\testimonial2-1-100x100_100x100.progressive.jpg" />
     <Content Include="newfinal\foto\trustseal_499x.png" />
+    <Content Include="newfinal\foto\wp2761425.gif" />
     <Content Include="newfinal\javascript\app.js" />
     <Content Include="newfinal\slick\slick.js" />
     <Content Include="newfinal\vendros\bootstrap.min.js" />
@@ -1159,14 +1180,18 @@
     <Content Include="Areas\admin1\Views\home\Index.cshtml" />
     <Content Include="Areas\admin1\Views\slider\Index.cshtml" />
     <Content Include="Areas\admin1\Views\slider\Edit.cshtml" />
-    <Content Include="Areas\admin1\Views\satis\Index.cshtml" />
-    <Content Include="Areas\admin1\Views\satis\Create.cshtml" />
-    <Content Include="Areas\admin1\Views\satis\Delete.cshtml" />
-    <Content Include="Areas\admin1\Views\satis\Details.cshtml" />
-    <Content Include="Areas\admin1\Views\satis\Edit.cshtml" />
     <Content Include="Areas\admin1\Views\admin\Login.cshtml" />
     <Content Include="Areas\admin1\Views\haqqinda\Index.cshtml" />
     <Content Include="Areas\admin1\Views\haqqinda\edit.cshtml" />
+    <Content Include="Areas\admin1\Views\musteri4\Delete.cshtml" />
+    <Content Include="Areas\admin1\Views\musteri4\Index.cshtml" />
+    <Content Include="Areas\admin1\Views\register\Delete.cshtml" />
+    <Content Include="Areas\admin1\Views\register\Index.cshtml" />
+    <Content Include="Areas\admin1\Views\satis1\Create.cshtml" />
+    <Content Include="Areas\admin1\Views\satis1\Delete.cshtml" />
+    <Content Include="Areas\admin1\Views\satis1\Details.cshtml" />
+    <Content Include="Areas\admin1\Views\satis1\Edit.cshtml" />
+    <Content Include="Areas\admin1\Views\satis1\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -1196,6 +1221,16 @@
     <Content Include="Views\cart\cart.cshtml" />
     <Content Include="Views\shop\shop.cshtml" />
     <Content Include="Views\blog\blog.cshtml" />
+    <Content Include="Views\login\login2.cshtml" />
+    <Content Include="Views\musteri44\Create.cshtml" />
+    <Content Include="Views\musteri44\Delete.cshtml" />
+    <Content Include="Views\musteri44\Details.cshtml" />
+    <Content Include="Views\musteri44\Edit.cshtml" />
+    <Content Include="Views\musteri44\Index.cshtml" />
+    <Content Include="Views\register\Create.cshtml" />
+    <Content Include="Views\register\Index.cshtml" />
+    <Content Include="Views\detail\Details.cshtml" />
+    <Content Include="Views\index2\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

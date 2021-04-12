@@ -6,6 +6,11 @@
 
 
 
+
+
+
+
+
 <div id="b1">
 
 
@@ -20,14 +25,88 @@
 
 </div>
 
+
+
+
+
+
+
+
+<div id="b1">
+    <div class="b2 nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/shop/shop/">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog/blog/" class="nav-link">Blog</a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            ACCOUNT
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/register/Create/">QEYDIYAT</a>
+                            <a class="dropdown-item" href="/login/login2/">LOGIN</a>
+                            <div class="dropdown-divider"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a href="/haqqinda/haqqinda" class="nav-link">HAQQINDA</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="b4">
+            <img src="~/newfinal/foto/logo-basel.svg" class="img-fluid" alt="">
+        </div>
+
+
+        <div class="b5 nav">
+
+
+
+
+        </div>
+
+
+    </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div id="c1" style="background:url(@header2.photourl)">
     <div class="c2">
-        <h1>@header2.soz1</h1>
-        <h4>@header2.soz2</h4>
+        <p style="font-size: 80px;">@header2.soz1</p>
+        <p style="font-size: 40px;">@header2.soz2</p>
     </div>
 </div>
 
@@ -65,10 +144,10 @@
             @foreach (sati1 saxtaad in ViewBag.satis2)
             {
                 <div class="q7">
-                    <a href="/cart/cart"> <img height="400px" src="@saxtaad.photourl" alt="">  </a>
+                    <a href="detail/details/@saxtaad.ID"> <img height="400px" src="@saxtaad.photourl" alt=""></a>
 
                     <p>@saxtaad.soz1</p>
-                    <h6>@saxtaad.qiymet</h6>
+                    <h4>@saxtaad.qiymet</h4>
                 </div>
             }
 
@@ -267,7 +346,7 @@
             <br>
             <br>
 
-          
+
         </div>
     </div>
 </div>

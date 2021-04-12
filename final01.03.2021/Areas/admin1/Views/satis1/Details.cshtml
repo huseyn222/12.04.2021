@@ -1,0 +1,59 @@
+﻿@model final01._03._2021.Models.sati1
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/admin1/Views/Shared/adminPage1.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>sati1</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.photourl)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.photourl)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.soz1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.soz1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qiymet)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qiymet)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.haqqinda8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.haqqinda8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Marka)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marka)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

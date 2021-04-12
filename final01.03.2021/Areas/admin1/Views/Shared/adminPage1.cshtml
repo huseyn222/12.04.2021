@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="~/Areas/admin1/admin9/css/style.css">
     <!-- endinject -->
     <link rel="shortcut icon" href="~/Areas/admin1/admin9/images/favicon.png" />
+    <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -429,8 +430,13 @@
                             <div class="collapse" id="sidebar-layouts">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","Slider")">slider</a></li>
-                                    <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","satis")">satis</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","satis1")">satis</a></li>
                                     <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","haqqinda")">haqqinda</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","register")">REGISTER</a></li>
+                                    <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index","musteri4")">MEHSUL-ALMAQ</a></li>
+
+
+
 
 
                                 </ul>
@@ -466,6 +472,7 @@
     <!-- Plugin js for this page-->
     <!-- End plugin js for this page-->
     <!-- inject:js -->
+
     <script src="~/Areas/admin1/admin9/js/off-canvas.js"></script>
     <script src="~/Areas/admin1/admin9/js/hoverable-collapse.js"></script>
     <script src="~/Areas/admin1/admin9/js/misc.js"></script>
@@ -474,6 +481,16 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <!-- End custom js for this page-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
 </body>
 
 

@@ -49,10 +49,52 @@
     <EntitySetMapping Name="sati1">
       <EntityTypeMapping TypeName="Model.sati1">
         <MappingFragment StoreEntitySet="sati1">
+          <ScalarProperty Name="Marka" ColumnName="Marka" />
           <ScalarProperty Name="haqqinda8" ColumnName="haqqinda8" />
           <ScalarProperty Name="qiymet" ColumnName="qiymet" />
           <ScalarProperty Name="soz1" ColumnName="soz1" />
           <ScalarProperty Name="photourl" ColumnName="photourl" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="registers">
+      <EntityTypeMapping TypeName="Model.register">
+        <MappingFragment StoreEntitySet="register">
+          <ScalarProperty Name="parol1" ColumnName="parol1" />
+          <ScalarProperty Name="parol" ColumnName="parol" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="logins">
+      <EntityTypeMapping TypeName="Model.login">
+        <MappingFragment StoreEntitySet="login">
+          <ScalarProperty Name="parol" ColumnName="parol" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="musteri4">
+      <EntityTypeMapping TypeName="Model.musteri4">
+        <MappingFragment StoreEntitySet="musteri4">
+          <ScalarProperty Name="haqqinda" ColumnName="haqqinda" />
+          <ScalarProperty Name="nomre" ColumnName="nomre" />
+          <ScalarProperty Name="unvan" ColumnName="unvan" />
+          <ScalarProperty Name="adsoyad" ColumnName="adsoyad" />
+          <ScalarProperty Name="fotourl" ColumnName="fotourl" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="teklifs">
+      <EntityTypeMapping TypeName="Model.teklif">
+        <MappingFragment StoreEntitySet="teklif">
+          <ScalarProperty Name="mesajiniz" ColumnName="mesajiniz" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="adiniz" ColumnName="adiniz" />
           <ScalarProperty Name="ID" ColumnName="ID" />
         </MappingFragment>
       </EntityTypeMapping>

@@ -15,10 +15,13 @@ namespace final01._03._2021.Controllers
 
         public ActionResult Index()
         {
+
             ViewBag.header2 = db.slide1.First();
             ViewBag.satis2 = db.sati1.ToList();
 
-            return View();
+            return View("Index");
+
+
         }
         public ActionResult huseyn1()
         {
@@ -27,8 +30,9 @@ namespace final01._03._2021.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
             return View();
+
+
         }
 
         public ActionResult Contact()
